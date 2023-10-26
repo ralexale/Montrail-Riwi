@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --text-color-primary: #c1ffa4;
+  --font-primary: "League Gothic", sans-serif;
+}
+
+.header {
+  border-radius: 10px;
+  width: 90vw;
+  z-index: 10;
+  margin: 1% 5%;
+  position: fixed;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.header__nav {
+  width: 100%;
+  height: 100%;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.hero__carousell {
+  
+  width: 600%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.carousell__mask {
+  position: absolute;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.carousell__items {
+  height: 100%;
+  width: 100%;
+  animation: mover 40s infinite linear;
+  object-fit: cover;
+}
+
+.slide{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.carousell__text {
+  left: 3%;
+  z-index: 10;
+  color: var(--text-color-primary);
+  font-family: var(--font-primary);
+  position: absolute;
+  font-size: 10vh;
+  width: 60vw;
+  text-align: center;
+  text-shadow: 2px 3px 3px #242424;
+}
+
+
+
+
+
+
+.container{
+  width: 100vh;
+  
+}
+
+.container__tundra{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tundra__text{
+  animation: show linear forwards;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px;
+  z-index: 10;
+  color: white;
+  font-size: 20vh;
+  text-shadow: 2px 2px 2px black;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.tundra__img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+
+@keyframes show{
+  to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+
+@keyframes mover {
+  0%{
+
+    transform: translateX(0);
+  }
+  100%{
+  transform: translateX(-300%);
+  }
+}
