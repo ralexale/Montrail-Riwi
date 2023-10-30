@@ -1,155 +1,278 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@200;300;400;600;800&display=swap");
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 :root {
-  --text-color-primary: #c1ffa4;
-  --font-primary: "League Gothic", sans-serif;
+    --text-color-primary: #c1ffa4;
+    --font-primary: "Poppins", sans-serif;
+    --font-titles: "Merriweather", serif;
 }
 
 .header {
-  border-radius: 10px;
-  width: 90vw;
-  z-index: 10;
-  margin: 1% 5%;
-  position: fixed;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    width: 90vw;
+    z-index: 999;
+    margin: 2% 5%;
+    position: fixed;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.603);
 }
 
 .header__nav {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .nav__links {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
-
+.links__biomontrails {
+    display: flex;
+    align-items: center;
+}
 .hero {
-  overflow: hidden;
-  height: 100vh;
-  width: 100%;
-  
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/img/banner/image 5.png");
 }
 
 .hero__carousell {
-  
-  width: 600%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
 }
 
 .carousell__mask {
-  position: absolute;
-  z-index: 2;
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.747) 100%
+    ); */
+
+    background-color: rgba(3, 3, 3, 0.452);
 }
 
 .carousell__items {
-  height: 100%;
-  width: 100%;
-  animation: mover 40s infinite linear;
-  object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
 }
 
-.slide{
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+.carousell_imgs {
+    position: absolute;
+    display: flex;
 }
 
 .carousell__text {
-  left: 3%;
-  z-index: 10;
-  color: var(--text-color-primary);
-  font-family: var(--font-primary);
-  position: absolute;
-  font-size: 10vh;
-  width: 60vw;
-  text-align: center;
-  text-shadow: 2px 3px 3px #242424;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+    color: white;
+    font-family: var(--font-titles);
+    position: absolute;
+    font-size: 5vh;
+    width: 60vw;
+    text-align: center;
+    text-shadow: 2px 3px 3px #242424;
 }
 
-
-
-
-
-
-.container{
-  width: 100vh;
-  
+.carousell__sitename {
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 999;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    width: 450px;
+    color: #ebff6d;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--font-titles);
 }
 
-.container__tundra{
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+.sitename__cristales {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    animation: mover_sitename 7s linear forwards;
 }
 
-
-.tundra__text{
-  animation: show linear forwards;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 100px;
-  z-index: 10;
-  color: white;
-  font-size: 20vh;
-  text-shadow: 2px 2px 2px black;
-  animation-timeline: view();
-  animation-range: cover 0% cover 50%;
+.sitename__merida {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    animation: mover_sitename 7s 6s linear forwards;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+}
+.sitename__nose {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    animation: mover_sitename 7s 12s linear forwards;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
 }
 
-.tundra__img{
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
+.sitename__angel {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    animation: mover_sitename 7s 18s linear forwards;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
 }
 
-
-
-
-
-
-@keyframes show{
-  to{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
+.img_transform {
+    transform: translateY(-100%);
+    z-index: 10;
 }
 
+.cristales_img1 {
+    animation: mover_imgs 7s linear forwards;
+}
 
-@keyframes mover {
-  0%{
+.cristales_img2 {
+    animation: mover_imgs 7s 0.5s linear forwards;
+}
 
-    transform: translateX(0);
-  }
-  100%{
-  transform: translateX(-300%);
-  }
+.cristales_img3 {
+    animation: mover_imgs 7s 1s linear forwards;
+}
+
+.cristales_img4 {
+    animation: mover_imgs 7s 1.5s linear forwards;
+}
+
+.merida_img1 {
+    animation: mover_imgs 7s 5.5s linear forwards;
+}
+.merida_img2 {
+    animation: mover_imgs 7s 6s linear forwards;
+}
+.merida_img3 {
+    animation: mover_imgs 7s 6.5s linear forwards;
+}
+.merida_img4 {
+    animation: mover_imgs 7s 7s linear forwards;
+}
+
+.nose_img1 {
+    animation: mover_imgs 7s 11s linear forwards;
+}
+
+.nose_img2 {
+    animation: mover_imgs 7s 11.5s linear forwards;
+}
+.nose_img3 {
+    animation: mover_imgs 7s 12s linear forwards;
+}
+.nose_img4 {
+    animation: mover_imgs 7s 12.5s linear forwards;
+}
+
+.angel_img1 {
+    animation: mover_imgs 7s 16.5s linear forwards;
+}
+.angel_img2 {
+    animation: mover_imgs 7s 17s linear forwards;
+}
+.angel_img3 {
+    animation: mover_imgs 7s 17.5s linear forwards;
+}
+.angel_img4 {
+    animation: mover_imgs 7s 18s linear forwards;
+}
+
+.container {
+    width: 100vh;
+}
+
+.container__tundra {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.tundra__img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes mover_imgs {
+    0% {
+        transform: translateY(-100%);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes mover_sitename {
+    0% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+@keyframes show {
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
