@@ -37,21 +37,26 @@ body {
 }
 
 .sierra_img {
+    margin-left: 100px;
     background-attachment: fixed;
     background-size: cover;
     background-image: url("../assets/img/tundra/paramo la culata.webp");
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 90%;
 }
 .sumadepaz_img {
+    margin-right: 100px;
     background-attachment: fixed;
     background-size: cover;
     background-image: url("../assets/img/tundra/Páramo_de_Sumapaz.jpg");
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 90%;
 }
 
 .sierra_text {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
     color: white;
     padding: 50px;
     margin: auto;
@@ -78,6 +83,7 @@ header {
 
 .card_pict {
     top: 200px;
+    right: 200px;
     position: absolute;
     background-attachment: fixed;
 }
