@@ -9,92 +9,59 @@
 }
 
 :root {
-    --text-color-primary: #c1ffa4;
+    --text-color-primary: #f1faee;
+    --red--palette: #e63946;
+    --light--blue: #a8dadc;
+    --medium--blue: #457b9d;
     --font-primary: "Poppins", sans-serif;
     --font-titles: "Merriweather", serif;
 }
 body {
     font-family: var(--font-primary);
     overflow-x: hidden;
-    background-color: #1d3557;
+    background: linear-gradient(0deg, #1d3557 0%, #7fa2d3 100%);
 }
-
-.sierra_img_container {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-
-.sierra_img_container h2 {
-    font-size: 30px;
-    color: white;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.sierra_img {
-    margin-left: 100px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url("../assets/img/tundra/paramo la culata.webp");
-    width: 100%;
-    height: 90%;
-}
-.sumadepaz_img {
-    margin-right: 100px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url("../assets/img/tundra/Páramo_de_Sumapaz.jpg");
-    width: 100%;
-    height: 90%;
-}
-
-.sierra_text {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 50px;
-    margin: auto;
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.sierra_text p {
-    font-size: 20px;
-}
-
-.sierra {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
-
-header {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
-
-.card_pict {
-    top: 200px;
-    right: 200px;
-    position: absolute;
-    background-attachment: fixed;
-}
-
-.card_text {
-    position: absolute;
-    top: 65%;
+/* 
+.header__nav {
+    border-radius: 10px;
+    top: 0;
+    margin: 1% 5%;
+    position: fixed;
     z-index: 999;
-    font-family: var(--font-titles);
-    font-size: 28px;
+    width: 90vw;
+    padding: 10px 20px;
+    background-color: #f1faeec0;
 }
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.nav__links {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side__links {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.side__links span {
+    font-weight: 800;
+    color: var(--red--palette);
+}
+
+.links__biomontrails {
+    display: flex;
+    align-items: center;
+} */
 
 .parallax_wrapper {
     background-size: cover;
@@ -109,7 +76,7 @@ header {
     align-items: center;
     justify-content: center;
 }
-.tundra__text {
+.parallax__text {
     z-index: 10;
     color: white;
     font-size: 220px;
@@ -117,20 +84,115 @@ header {
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-.paramo-sumapaz {
-    height: 100vh;
-    width: 100vw;
+.sites_img_container {
     display: flex;
-    overflow: hidden;
-    justify-content: space-evenly;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
 }
 
-/* .parallax_img {
-    position: absolute;
-    top: 0;
-    height: 100%;
+.sites_img_container h2 {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.culata_img {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../assets/img/tundra/paramo la culata.webp");
     width: 100%;
-    object-fit: cover;
-} */
+    height: 90%;
+}
+.sumadepaz_img {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../assets/img/tundra/Páramo_de_Sumapaz.jpg");
+    width: 100%;
+    height: 90%;
+}
+
+.sites_text {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    width: 400px;
+    height: 60%;
+}
+
+.sites_text h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.sites_text p {
+    border-radius: 10px;
+    background-color: #003f88;
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: 2px 1px 10px rgba(255, 0, 200, 0.329);
+    color: var(--text-color-primary);
+}
+
+.sites {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 40px 0;
+}
+
+.card_sumapaz {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 240px;
+    box-shadow: 1px 1px 5px rgba(159, 196, 226, 0.466);
+}
+.card_culata {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 240px;
+    box-shadow: 1px 1px 5px rgba(159, 196, 226, 0.466);
+}
+
+.card_text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+    font-family: var(--font-titles);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.sites__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sites__buttons a {
+    background-color: var(--red--palette);
+    text-decoration: none;
+    color: var(--text-color-primary);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.sites__buttons a:hover {
+    background-color: var(--medium--blue);
+}
