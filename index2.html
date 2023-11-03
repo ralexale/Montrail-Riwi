@@ -8,17 +8,18 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
         />
         <link rel="stylesheet" href="./styles/main.css" />
-        <title>Montrails D</title>
+        <link rel="stylesheet" href="./styles/modal.css" />
+        <title>BioMontrails</title>
     </head>
     <body>
         <header class="header">
             <nav class="header__nav">
                 <ul class="nav__links">
-                    <li class="links__biomontrails">
+                    <a class="links__biomontrails">
                         Bi<span class="material-symbols-outlined">
                             light_mode </span
                         >Montrails
-                    </li>
+                    </a>
                     <li>Biomas</li>
                     <li>Información</li>
                 </ul>
@@ -204,26 +205,5 @@
                 <div class="carousell__mask"></div>
             </div>
         </section>
-
-        <main class="container">
-            <section class="container__tundra">
-                <div class="tundra__text">Tundra</div>
-              
-                <input type="checkbox" class="modal__checkbox" id="modalToggle">
-                <div id="medellin" class="modal">
-                    <div class="mask"></div>
-                    <iframe
-                        src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-                        width="50%"
-                        height="50%"
-                        style="border: 0"
-                        loading="lazy"
-                    >
-                    </iframe>
-                    <label for="modalToggle" class="modal__close">close</label>
-                </div>
-                <label class="modal__button" for="modalToggle">Abrir Modal</label>
-                
-        </main>
     </body>
 </html>

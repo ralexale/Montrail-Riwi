@@ -1,33 +1,47 @@
-.modal__container {
-    height: 100vh;
-    width: 100vw;
-    opacity: 0;
-    position: relative;
+:root {
+    --clip: circle(0% at 100% 0);
+    --show: circle(141.2% at 100% 0);
+    --text-color-primary: #c1ffa4;
+    --font-primary: "Poppins", sans-serif;
+    --font-titles: "Merriweather", serif;
 }
 
-.modal_btn {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(136, 35, 207);
-    padding: 5px 10px;
-    font-size: 2rem;
-    border-radius: 5px;
-}
 .modal {
+    z-index: 100;
     position: fixed;
-    background: rgba(0, 0, 0, 0.486);
+    background: rgba(0, 0, 0, 0.4);
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     clip-path: var(--clip);
     transition: all 1s ease;
 }
 
+.modal_content {
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    height: 80%;
+    width: 80%;
+}
+
+.modal_content img {
+    border-radius: 10px;
+}
+
 /* Estilos iniciales del modal, oculto */
+.modal {
+    opacity: 0;
+}
 
 /* Estilos para mostrar el modal cuando el input está marcado */
 .modal__checkbox:checked + .modal {
@@ -36,18 +50,15 @@
 }
 
 .modal__close {
+    display: flex;
     position: absolute;
-    top: 100px;
-    right: 310px;
-    text-decoration: none;
-    background-color: crimson;
+    top: 10px;
+    right: 10px;
+    background-color: green;
     color: white;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 30px;
-    display: block;
     border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
 }
 
 .modal__checkbox {
@@ -64,6 +75,7 @@
     border: none;
     border-radius: 5px;
     text-align: center;
+    transition: all 0.5s;
 }
 
 /* Cambiar el estilo del botón cuando el input está marcado (comprobado) */
