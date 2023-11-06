@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'DM Serif Display', serif;
+}
+
+body{
+    overflow:scroll;
+    
+}
+.section-video{
+    width: 100%; 
+    position: relative;
+    padding: 0;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    max-width: 100%;
+    top: -10px;
+    left: -10px;
+    height: calc(70%+20px);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+.text-intro {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 70vh; /* Cambié 250hv a 100vh para corregir el error de escritura */
+    width: 100%; /* Usar el ancho completo del contenedor */
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente en negro */
+    color: #EAE2B7;
+    flex-direction: column; /* Colocar elementos en columna */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 0;
+}
+
+.text-intro h1 {
+    background-color: rgba(0, 0, 0, 0.2); /* Cuadro semitransparente en negro para el h1 */
+    padding: 10px; /* Agregar un relleno al h1 para mayor estilo */
+    border-radius: 5px; /* Agregar bordes redondeados al cuadro */
+    margin: 10px;
+    text-transform: uppercase; /* Agregar margen alrededor del cuadro */
+    font-size: 60px;
+    top: 10px;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    margin: 100px;
+
+    
+}
+
+.text-intro p {
+    margin: 10px 0; /* Agregar margen superior e inferior al párrafo */
+    font-size: 25px;
+}
+.container-button{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  
+}
+.btn-1{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-1 a{
+  text-decoration: none;
+  border: 2px solid #EAE2B7;
+  padding: 15px;
+  color: #EAE2B7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+
+span {
+  position: relative;
+  /* z-index coz when we put bg to before and after this span text will not be visible */
+  z-index: 3;
+}
+
+/* Button 1 styles */
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 4px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.7s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -4px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 5px);
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+
+.btn-1 a:hover::after {
+  transform: scale(1);
+  background-color:#003049;
+  height: 67px;
+  bottom: -2px;
+}
+.header .text-intro .btn-1{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.desiertos-venezla{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    border-radius: 20px; 
+    border-top-left-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+    background: linear-gradient(to bottom, #EAE2B7, #FCBF49,#F77F00 );
+}
+.desiertos-venezla h2{
+    font-size: 60px;
+    color:#D62828;
+    position: relative;
+}
+
+.container-medano{
+    display: inline-flex;
+    border: 1px solid #003049;
+    margin: 25px 0 ;
+    background: linear-gradient(45deg, #EAE2B7, #FCBF49 );
+    justify-content: space-around;
+}
+.slider-medano{
+    aspect-ratio: 10/16;
+    width: 600px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
+}
+.slider-medano img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;       
+}
+.text-medanos{
+    width: 70%;
+    margin: 0 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+.text-medanos h2{
+    color: #003049;
+    font-size: 30px;
+}
+
+
+.desiertos-colombia{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    border-radius: 20px; 
+    border-top-left-radius: 25px; 
+    border-bottom-right-radius: 25px; 
+    background: linear-gradient(to bottom, #EAE2B7, #FCBF49,#F77F00 );
+}
+.desiertos-colombia h2{
+    font-size: 60px;
+    color:#D62828;
+    position: relative;
+}
+.container-tatacoa{
+    display: inline-flex;
+    margin: 25px 0 ;
+    background: linear-gradient(45deg,#FCBF49, #EAE2B7);
+    justify-content: space-between;
+    position:relative;
+}
+.slider-tatacoa{
+    aspect-ratio: 10/16;
+    width: 600px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
+}
+.slider-tatacoa img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;       
+}
+.text-tatacoa{
+    width: 70%;
+    margin: 0 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    order: 1;
+}
+.text-tatacoa h2{
+    color: #003049;
+    font-size: 30px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    order: 2; /* Cambia el orden para que aparezca debajo del texto */
+  }
+  
+  
+
+
+.container-candelaria{
+    display: inline-flex;
+    
+    margin: 25px 0 ;
+    background: linear-gradient(45deg,#EAE2B7,#FCBF49 );
+    justify-content: space-around;
+}
+.slider-candelaria{
+    aspect-ratio: 10/16;
+    width: 600px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
+}
+.slider-candelaria img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;       
+}
+.text-candelaria{
+    width: 70%;
+    margin: 0 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+.text-candelaria h2{
+    color: #003049;
+    font-size: 30px;
+}
