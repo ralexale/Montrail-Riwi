@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BioMontrails | Tundra</title>
+    <title>BioMontrails | Desierto</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../../styles/components/navbar.css" />
     <link rel="stylesheet" href="../../styles/components/modal.css" />
@@ -39,11 +40,11 @@
                             </span>
                         </label>
 
-                        <a href="./es/seccions/ciudad.html" style="--a: 0">Ciudad</a>
-                        <a href="./es/seccions/bosques.html" style="--a: 1">Bosque</a>
-                        <a href="./es/seccions/tundra.html" style="--a: 2">Tundra</a>
-                        <a href="./es/seccions/desierto.html" style="--a: 3">Desierto</a>
-                        <a href="./es/seccions/playa.html" style="--a: 4">Playa</a>
+                        <a href="./ciudad.html" style="--a: 0">Ciudad</a>
+                        <a href="./bosques.html" style="--a: 1">Bosque</a>
+                        <a href="./tundra.html" style="--a: 2">Tundra</a>
+                        <a href="./desierto.html" style="--a: 3">Desierto</a>
+                        <a href="./playa.html" style="--a: 4">Playa</a>
 
                     </ul>
                 </div>
@@ -126,33 +127,77 @@
             <figure class="sites_img_container">
                 <div class="sites_card">
                     <span class="card_text">Explora!</span>
-                    <svg class="card_culata" width="200" height="300" viewBox="0 0 154 184" fill="none"
+                    <svg class="card__1" width="200" height="300" viewBox="0 0 154 184" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-                            fill="#A8DADC"></path>
+                            fill="#fcbf49"></path>
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-                            fill="#A8DADC"></path>
+                            fill="#fcbf49"></path>
                     </svg>
                 </div>
 
-                <div class="culata_img"></div>
+                <div class="site_img_1"></div>
             </figure>
 
             <div class="sites_text">
                 <h2>
-                    Paramo la Culata <br />
+                    Bahía de Cata <br />
                     Venezuela
                 </h2>
                 <p>
-                    Sumérgete en las alturas del Páramo de la Culata en
-                    Venezuela!.
+                    La Bahía de Cata te ofrece aguas cristalinas, arena dorada y una atmósfera de serenidad que acarician tus sentidos
                 </p>
 
                 <!-- boton para abrir el modal -->
                 <input type="checkbox" class="modal__checkbox" id="modalToggle" />
                 <!-- contenedor del modal  de paramo-->
                 <section class="modal">
+                    <!-- google maps  -->
+
+                    <article class="modal_content">
+                        <div class="modal__img">
+                            <img src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
+                                alt="parque paramo la culata" />
+                            <p>
+                                Situados en el estado Falcón, en el noroeste de Venezuela, los Médanos de Coro son una
+                                joya geológica.
+                                Sus imponentes dunas de
+                                hasta 40 metros de altura te dejarán sin aliento.
+                            </p>
+                        </div>
+                        <!-- google maps -->
+                        <iframe
+                            src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
+                            width="50%" height="100%" style="border: 0" loading="lazy">
+                        </iframe>
+                        <label for="modalToggle" class="modal__close"><span class="material-symbols-outlined">
+                                close
+                            </span></label>
+                    </article>
+
+                    <!-- Boton de cerrar  -->
+                </section>
+                <label class="modal__button" for="modalToggle">Rutas y Planes</label>
+            </div>
+        </section>
+
+        <section class="sites">
+            <div class="sites_text">
+                <h2>
+                    Playa Blanca <br>(Islas del Rosario) <br />
+                    Colombia
+                </h2>
+                <p>
+                    Arena
+                    blanca como la nieve, aguas turquesas y un ambiente de ensueño te esperan en este rincón del Caribe
+                    colombiano.
+                </p>
+
+                <!-- boton para abrir el modal -->
+                <input type="checkbox" class="modal__checkbox" id="modalToggle_sumapaz" />
+                <!-- contenedor del modal  de paramo-->
+                <section class="modal sumapaz">
                     <!-- google maps  -->
 
                     <article class="modal_content">
@@ -180,66 +225,20 @@
                 </section>
                 <label class="modal__button" for="modalToggle">Rutas y Planes</label>
             </div>
-        </section>
-
-
-
-        <section class="sites">
-            <div class="sites_text">
-                <h2>
-                    Páramo de Sumapaz <br />
-                    Colombia
-                </h2>
-                <p>
-                    Descubre el pulso del Páramo de Sumapaz en Colombia, el
-                    páramo más grande del mundo.
-                </p>
-
-                <!-- boton para abrir el modal -->
-                <input type="checkbox" class="modal__checkbox" id="modalToggle_sumapaz" />
-                <!-- contenedor del modal  de paramo-->
-                <section class="modal sumapaz">
-                    <!-- google maps  -->
-
-                    <article class="modal_content">
-                        <div class="modal__img">
-                            <img src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
-                                alt="parque paramo la culata" />
-                            <p>
-                                Un refugio de vida
-                                silvestre y senderos que te llevarán a un viaje a través
-                                de las nubes.
-                            </p>
-                        </div>
-
-                        <!-- google maps -->
-                        <iframe
-                            src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-                            width="50%" height="100%" style="border: 0" loading="lazy">
-                        </iframe>
-                        <label for="modalToggle" class="modal__close"><span class="material-symbols-outlined">
-                                close
-                            </span></label>
-                    </article>
-
-                    <!-- Boton de cerrar  -->
-                </section>
-                <label class="modal__button" for="modalToggle">Rutas y Planes</label>
-            </div>
             <figure class="sites_img_container">
                 <div>
                     <span class="card_text">Diviertete!</span>
-                    <svg class="card_sumapaz" width="200" height="300" viewBox="0 0 154 184" fill="none"
+                    <svg class="card__2" width="200" height="300" viewBox="0 0 154 184" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-                            fill="#A8DADC"></path>
+                            fill="#fcbf49"></path>
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-                            fill="#A8DADC"></path>
+                            fill="#fcbf49"></path>
                     </svg>
                 </div>
 
-                <div class="sumadepaz_img"></div>
+                <div class="site_img_2"></div>
             </figure>
         </section>
     </main>

@@ -1,151 +1,156 @@
-<!-- KEIBER LAZARO -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bosques</title>
-    <link rel="stylesheet" href="../../styles/bosque.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../styles/modal.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioMontrails | Desierto</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../styles/components/navbar.css" />
+  <link rel="stylesheet" href="../../styles/components/modal.css" />
+  <link rel="stylesheet" href="../../styles/seccions/bosque.css" />
 </head>
+
 <body>
+  <!-- navbar -->
   <header>
-		<!-- barra de navegacion -->
-		<nav class="navbar_container">
+    <!-- barra de navegacion -->
+    <nav class="navbar_container">
 
-			<div class="mobile__elements">
+      <div class="mobile__elements">
 
-				<div class="burger__menu">
+        <div class="burger__menu">
 
-					<input id="menu-toggle" type="checkbox" />
+          <input id="menu-toggle" type="checkbox" />
 
-					<label class='menu-button-container' for="menu-toggle">
-						<span class="material-symbols-outlined">
-							menu
-						</span>
-					</label>
-
-
-					<ul class="menu">
-						<label class='menu-button-container' for="menu-toggle">
-							<span class="material-symbols-outlined">
-								cancel
-							</span>
-						</label>
-
-						<a href="./es/seccions/ciudad.html" style="--a: 0">Ciudad</a>
-						<a href="./es/seccions/bosques.html" style="--a: 1">Bosque</a>
-						<a href="./es/seccions/tundra.html" style="--a: 2">Tundra</a>
-						<a href="./es/seccions/desierto.html" style="--a: 3">Desierto</a>
-						<a href="./es/seccions/playa.html" style="--a: 4">Playa</a>
-
-					</ul>
-				</div>
-
-				<div class="logo">
-					<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
-				</div>
+          <label class='menu-button-container' for="menu-toggle">
+            <span class="material-symbols-outlined">
+              menu
+            </span>
+          </label>
 
 
-				<a class="login__button" href="/">
-					<span class="material-symbols-outlined">
-						account_circle
-					</span>
-				</a>
+          <ul class="menu">
+            <label class='menu-button-container' for="menu-toggle">
+              <span class="material-symbols-outlined">
+                cancel
+              </span>
+            </label>
+
+            <a href="./ciudad.html" style="--a: 0">Ciudad</a>
+            <a href="./bosques.html" style="--a: 1">Bosque</a>
+            <a href="./tundra.html" style="--a: 2">Tundra</a>
+            <a href="./desierto.html" style="--a: 3">Desierto</a>
+            <a href="./playa.html" style="--a: 4">Playa</a>
+
+          </ul>
+        </div>
+
+        <div class="logo">
+          <a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
+        </div>
+
+
+        <a class="login__button" href="/">
+          <span class="material-symbols-outlined">
+            account_circle
+          </span>
+        </a>
 
 
 
-			</div>
+      </div>
 
-			<div class="desktop__elements">
+      <div class="desktop__elements">
 
-				<div class="logo">
-					<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
-				</div>
+        <div class="logo">
+          <a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1> </a>
+        </div>
 
-				<ul class="navbar__links">
-					<div>
-						biomas <span class="material-symbols-outlined">
-							expand_more
-						</span>
-					</div>
 
-					<a href="/">Restaurantes</a>
-					<a href="/">Hoteles</a>
-				</ul>
+        <div class="dropdown__menu">
 
-				<!-- input de buscardor -->
-				<div class="navbar__search">
-					<input type="text" placeholder="biomas,restaurantes...">
-					<a class="material-symbols-outlined">
-						search
-					</a>
-				</div>
-
-				<!-- boton de login -->
-				<div class="login__container">
-					<span class="material-symbols-outlined">
-						account_circle
-					</span>
-					<a href="/">Iniciar Sesión</a>
-				</div>
-
-			</div>
-			<!-- logo principal -->
-
-		</nav>
-
-	</header>
-    <main>
-      <section class="bosque-c">
-        <figure class="Bosque-img-container">
-          <span class="card-text">Vive</span>
-          <svg
-            class="card-pict"
-            width="200"
-            height="300"
-            viewBox="0 0 154 184"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-              fill="#A8DADC"
-            ></path>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-              fill="#A8DADC"
-            ></path>
-          </svg>
-          <div class="bosque-img"></div>
-        </figure>
-        
-        <div class="bosque-text">
-          <h2>Santuario de la Palma de Cera - Colombia</h2>
-
-          <div class="bosque-content">
-            <h3>Lugar mágico que te cautivará.</h3>
-            <p>
-            
-            Aquí, te sumergirás en un bosque nublado lleno de misterio y biodiversidad, donde la palma de cera, el árbol nacional de Colombia, se alza majestuosamente hacia el cielo. Experimentarás una conexión única con la naturaleza mientras exploras senderos rodeados de vegetación exuberante y descubres la importancia de esta icónica especie.
-
-            Además, tendrás la oportunidad de aprender sobre la cultura y las tradiciones de las comunidades locales que han convivido en armonía con la palma de cera durante generaciones. Pero eso no es todo, en este santuario también tendrás la oportunidad de avistar al hermoso loro orejiamarillo, una especie en peligro crítico de extinción, lo que hace que tu visita sea aún más especial.
-            </p>
+          <div class="dropdown__title">
+            <span> Biomas <span class="material-symbols-outlined">
+                expand_more
           </div>
 
-          <!-- boton para abrir el modal -->
+
+
+
+          <ul class="dropdown__links">
+            <a href="./ciudad.html" class="bioma__link">Ciudad</a>
+            <a href="./bosques.html" class="bioma__link">Bosque</a>
+            <a href="./tundra.html" class="bioma__link">Tundra</a>
+            <a href="./desierto.html" class="bioma__link">Desierto</a>
+            <a href="./playa.html" class="bioma__link">Playa</a>
+          </ul>
+        </div>
+
+        <ul class="navbar__links">
+          <a href="/">Restaurantes</a>
+          <a href="/">Hoteles</a>
+        </ul>
+
+        <!-- input de buscardor -->
+        <div class="navbar__search">
+          <input type="text" placeholder="biomas,restaurantes...">
+          <a class="material-symbols-outlined">
+            search
+          </a>
+        </div>
+
+        <!-- boton de login -->
+        <div class="login__container">
+          <span class="material-symbols-outlined">
+            account_circle
+          </span>
+          <a href="/">Iniciar Sesión</a>
+        </div>
+
+      </div>
+      <!-- logo principal -->
+
+    </nav>
+
+  </header>
+  <!-- contenedor de sitios -->
+  <main>
+    <section class="hero">
+      <div class="parallax__text">Bosque</div>
+    </section>
+
+    <section class="sites">
+      <figure class="sites_img_container">
+        <div class="sites_card">
+          <span class="card_text">Explora!</span>
+          <svg class="card__1" width="200" height="300" viewBox="0 0 154 184" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z" fill="#dad7cd">
+            </path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
+              fill="#dad7cd"></path>
+          </svg>
+        </div>
+
+        <div class="site_img_1"></div>
+      </figure>
+
+      <div class="sites_text">
+        <h2>
+          Parque nacional El Ávila <br />
+          Venezuela
+        </h2>
+        <p>
+          Imagina disfrutar de vistas panorámicas espectaculares de Caracas y el Mar Caribe desde las alturas de este
+          parque, que abarca una diversidad de ecosistemas en un solo día.
+        </p>
+
+        <!-- boton para abrir el modal -->
         <input type="checkbox" class="modal__checkbox" id="modalToggle" />
         <!-- contenedor del modal  de paramo-->
         <section class="modal">
@@ -153,181 +158,90 @@
 
           <article class="modal_content">
             <div class="modal__img">
-              <img
-                src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
-                alt="parque paramo la culata"
-              />
+              <img src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
+                alt="parque paramo la culata" />
               <p>
-                Explora paisajes de ensueño, lagunas cristalinas y una
-                biodiversidad única en uno de los destinos más mágicos de la
-                tundra andina.
+                Situados en el estado Falcón, en el noroeste de Venezuela, los Médanos de Coro son una
+                joya geológica.
+                Sus imponentes dunas de
+                hasta 40 metros de altura te dejarán sin aliento.
               </p>
             </div>
             <!-- google maps -->
             <iframe
               src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-              width="50%"
-              height="100%"
-              style="border: 0"
-              loading="lazy"
-            >
+              width="50%" height="100%" style="border: 0" loading="lazy">
             </iframe>
-            <label for="modalToggle" class="modal__close"
-              ><span class="material-symbols-outlined"> close </span></label
-            >
+            <label for="modalToggle" class="modal__close"><span class="material-symbols-outlined">
+                close
+              </span></label>
           </article>
 
           <!-- Boton de cerrar  -->
         </section>
         <label class="modal__button" for="modalToggle">Rutas y Planes</label>
-          </div>
-        </div>  
-      </section>
+      </div>
+    </section>
 
-      <section class="bosque-v">
-        <div class="bosque-text">
-          <h2>Parque nacional El Ávila - Venezuela</h2>
-          <div class="bosque-content">
-            <h3>Joya natural que no querrás perderte.</h3>
-            <p>
-            Imagina disfrutar de vistas panorámicas espectaculares de Caracas y el Mar Caribe desde las alturas de este parque, que abarca una diversidad de ecosistemas en un solo día. Puedes explorar senderos naturales, apreciar una flora y fauna únicas, y sentirte inmerso en la naturaleza en medio de una gran ciudad.
+    <section class="sites">
+      <div class="sites_text">
+        <h2>
+          Santuario de la Palma de Cera <br />
+          Colombia
+        </h2>
+        <p>
+          te sumergirás en un bosque nublado lleno de misterio y biodiversidad, donde la palma de cera, el árbol
+          nacional de Colombia, se alza majestuosamente hacia el cielo.
+        </p>
 
-            Además, tendrás la oportunidad de experimentar la hospitalidad y la calidez de la gente venezolana mientras compartes momentos inolvidables en este parque nacional. Con su historia, biodiversidad y paisajes pintorescos, El Ávila es una visita que te conectará con la belleza natural de Venezuela y te dejará con recuerdos inolvidables. ¡Anímate a conocer este tesoro natural en medio de la bulliciosa Caracas!
-            </p>
-          </div>
-          <input type="checkbox" class="modal__checkbox" id="modalToggle" />
-  
-        <section class="modal">
+        <!-- boton para abrir el modal -->
+        <input type="checkbox" class="modal__checkbox" id="modalToggle_sumapaz" />
+        <!-- contenedor del modal  de paramo-->
+        <section class="modal sumapaz">
+          <!-- google maps  -->
+
           <article class="modal_content">
             <div class="modal__img">
-              <img
-                src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
-                alt="parque paramo la culata"
-              />
+              <img src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
+                alt="parque paramo la culata" />
               <p>
-              Explora paisajes de ensueño, lagunas cristalinas y una
-              biodiversidad única en uno de los destinos más mágicos de la
-              tundra andina.
+                Explora paisajes de ensueño, lagunas
+                cristalinas y una biodiversidad única en uno
+                de los destinos más mágicos de la tundra
+                andina.
               </p>
             </div>
+            <!-- google maps -->
             <iframe
-              rc="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-              width="50%"
-              height="100%"
-              style="border: 0"
-              loading="lazy"
-            >
+              src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
+              width="50%" height="100%" style="border: 0" loading="lazy">
             </iframe>
-            <label for="modalToggle" class="modal__close">
-              <span class="material-symbols-outlined"> close </span>
-            </label>
+            <label for="modalToggle" class="modal__close"><span class="material-symbols-outlined">
+                close
+              </span></label>
           </article>
 
-
+          <!-- Boton de cerrar  -->
         </section>
         <label class="modal__button" for="modalToggle">Rutas y Planes</label>
-
-          </div>
-          <figure class="Bosque-img-container">
-            <span class="card-text">Maravillate</span>
-            <svg
-              class="card-pict"
-              width="200"
-              height="300"
-              viewBox="0 0 154 184"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-                fill="#A8DADC"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-                fill="#A8DADC"
-              ></path>
-            </svg>
-            <div class="bosquev-img"></div>
-          </figure>
-
-            
-      </section>
-      <section class="bosque-c2">
-        <figure class="Bosque-img-container">
-          <span class="card-text">Asombrate</span>
-          <svg
-            class="card-pict"
-            width="200"
-            height="300"
-            viewBox="0 0 154 184"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-              fill="#A8DADC"
-            ></path>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-              ill="#A8DADC"
-            ></path>
-          </svg>
-          <div class="bosquec2-img"></div>
-        </figure>
-        <div class="bosque-text">
-          <h2>Selva Amazonica - Colombia</h2>
-          <div class="bosque-content">
-            <h3>Aventura incomparable.</h3>
-            <p>
-              Imagina sumergirte en un mundo de biodiversidad deslumbrante, donde la selva se extiende hasta donde alcanza la vista y los sonidos de la vida silvestre te envuelven. Cada momento aquí es único y mágico.
-
-              Tendrás la oportunidad de presenciar animales asombrosos como jaguares, delfines rosados y monos en su entorno natural. Además, conocerás a comunidades indígenas que han vivido en armonía con la selva durante generaciones, lo que te permitirá aprender sobre sus culturas únicas.
-            </p>
-          </div>
-          <!-- boton para abrir el modal -->
-  <input type="checkbox" class="modal__checkbox" id="modalToggle" />
-  <!-- contenedor del modal  de paramo-->
-  <section class="modal">
-    <!-- google maps  -->
-
-    <article class="modal_content">
-      <div class="modal__img">
-        <img
-          src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
-          alt="parque paramo la culata"
-        />
-        <p>
-          Explora paisajes de ensueño, lagunas cristalinas y una
-          biodiversidad única en uno de los destinos más mágicos de la
-          tundra andina.
-        </p>
       </div>
-      <!-- google maps -->
-      <iframe
-        src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-        width="50%"
-        height="100%"
-        style="border: 0"
-        loading="lazy"
-      >
-      </iframe>
-      <label for="modalToggle" class="modal__close"
-        ><span class="material-symbols-outlined"> close </span></label
-      >
-    </article>
+      <figure class="sites_img_container">
+        <div>
+          <span class="card_text">Diviertete!</span>
+          <svg class="card__2" width="200" height="300" viewBox="0 0 154 184" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z" fill="#dad7cd">
+            </path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
+              fill="#dad7cd"></path>
+          </svg>
+        </div>
 
-    <!-- Boton de cerrar  -->
-  </section>
-  <label class="modal__button" for="modalToggle">Rutas y Planes</label>
-    </div>
-  </div>  
-    </main>
+        <div class="site_img_2"></div>
+      </figure>
+    </section>
+  </main>
+</body>
+
 </html>

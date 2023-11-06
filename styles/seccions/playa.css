@@ -12,9 +12,10 @@
     --clip: circle(0% at 100% 0);
     --show: circle(141.2% at 100% 0);
     --text-color-primary: #f1faee;
-    --red--palette: #e63946;
+    --boton-modal: #003049;
     --light--blue: #a8dadc;
-    --medium--blue: #457b9d;
+    --hover-buton-modal: #eae2b7;
+    --card-text-color: #d62828;
     --font-primary: "Poppins", sans-serif;
     --font-titles: "Merriweather", serif;
 }
@@ -31,7 +32,7 @@ body {
     background-attachment: fixed;
     background-image: url("../../assets/img/playa/playa-banner.webp");
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -67,21 +68,26 @@ body {
         & .sites_img_container {
             width: 80%;
 
-            & .card_culata {
+            & .site_img_1 {
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            & .card__1 {
                 top: 60%;
                 height: 180px;
 
                 width: 150px;
             }
 
-            & .card_sumapaz {
+            & .card__2 {
                 top: 60%;
                 height: 180px;
 
                 width: 150px;
             }
             & .card_text {
-                top: 69%;
+                top: 75%;
                 font-size: 20px;
             }
         }
@@ -112,17 +118,17 @@ section.sites:nth-of-type(2) {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.culata_img {
+.site_img_1 {
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("../../assets/img/tundra/paramo la culata.webp");
+    background-image: url("../../assets/img/playa/bahia-de-cata-42051.jpg");
     width: 100%;
     height: 90%;
 }
-.sumadepaz_img {
+.site_img_2 {
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("../../assets/img/tundra/Páramo_de_Sumapaz.jpg");
+    background-image: url("../../assets/img/playa/20200414-1586839074-tour_panoramico_a_islas_del_rosario_y_playa_blanca_tu_experiencia_3.jpg");
     width: 100%;
     height: 90%;
 }
@@ -144,14 +150,14 @@ section.sites:nth-of-type(2) {
 }
 .sites_text p {
     border-radius: 10px;
-    background-color: #003f88;
+    background-color: var(--card-text-color);
     font-size: 20px;
     padding: 15px;
     box-shadow: 2px 1px 10px rgba(255, 0, 200, 0.329);
     color: var(--text-color-primary);
 }
 
-.card_sumapaz {
+.card__1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -159,7 +165,7 @@ section.sites:nth-of-type(2) {
     height: 240px;
     box-shadow: 1px 1px 5px rgba(159, 196, 226, 0.466);
 }
-.card_culata {
+.card__2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -170,32 +176,13 @@ section.sites:nth-of-type(2) {
 
 .card_text {
     position: absolute;
-    top: 56%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 20;
     font-family: var(--font-titles);
     font-weight: 600;
     font-size: 28px;
-}
-
-.sites__buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.sites__buttons a {
-    background-color: var(--red--palette);
-    text-decoration: none;
-    color: var(--text-color-primary);
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.5s;
-}
-
-.sites__buttons a:hover {
-    background-color: var(--medium--blue);
 }
 
 .modal_content .modal__img {
@@ -217,7 +204,7 @@ a {
 }
 
 .modal__button {
-    background-color: var(--red--palette);
+    background-color: var(--boton-modal);
 }
 
 .modal__checkbox:checked + .sumapaz {
@@ -232,4 +219,9 @@ a {
 .modal__checkbox_sumapaz:checked + .modal {
     clip-path: var(--show);
     opacity: 1;
+}
+
+.modal__button:hover {
+    color: black;
+    background-color: var(--hover-buton-modal);
 }
