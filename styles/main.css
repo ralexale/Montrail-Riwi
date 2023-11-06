@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 :root {
     --clip: circle(0% at 100% 0);
     --show: circle(141.2% at 100% 0);
