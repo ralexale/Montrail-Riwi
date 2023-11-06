@@ -209,7 +209,9 @@ header {
                 height: 42px;
                 align-items: center;
 
-                & a {
+                & button {
+                    background-color: transparent;
+                    border: none;
                     cursor: pointer;
                 }
                 & input {
