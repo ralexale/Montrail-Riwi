@@ -1,0 +1,120 @@
+:root {
+    --clip: circle(0% at 100% 0);
+    --show: circle(141.2% at 100% 0);
+    --text-color-primary: #c1ffa4;
+    --font-primary: "Poppins", sans-serif;
+    --font-titles: "Merriweather", serif;
+}
+
+.modal {
+    overflow: auto;
+    z-index: 100;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: var(--clip);
+    transition: all 1s ease;
+
+    @media screen and (width <= 768px) {
+        & .modal_content {
+            gap: 20px;
+            display: flex;
+            overflow-y: scroll;
+            flex-direction: column;
+            width: 90%;
+
+            & iframe {
+                width: 100%;
+                height: 100%;
+            }
+            & .modal__img {
+                width: 100%;
+
+                & img {
+                    height: 80%;
+                    width: 80%;
+                }
+                & p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.modal_content {
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    height: 80%;
+    width: 80%;
+
+    & p {
+        font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+    }
+}
+
+.modal_content img {
+    border-radius: 10px;
+}
+
+/* Estilos iniciales del modal, oculto */
+.modal {
+    opacity: 0;
+}
+
+/* Estilos para mostrar el modal cuando el input está marcado */
+.modal__checkbox:checked + .modal {
+    clip-path: var(--show);
+    opacity: 1;
+}
+
+.modal__close {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.modal__checkbox {
+    display: none;
+}
+
+/* Estilos para el botón */
+.modal__button {
+    display: inline-block;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+/* Cambiar el estilo del botón cuando el input está marcado (comprobado) */
+.modal__checkbox:checked + .modal__button {
+    background-color: #ff5733;
+}
+
+/* Estilo del botón cuando se coloca el puntero encima */
+.modal__button:hover {
+    background-color: #0056b3;
+}
