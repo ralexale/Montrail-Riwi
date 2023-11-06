@@ -20,6 +20,17 @@
     justify-content: center;
     clip-path: var(--clip);
     transition: all 1s ease;
+
+    @media screen and (width <= 600px) {
+        & .modal_content {
+            width: 90%;
+            outline: 1px saddlebrown solid;
+
+            & img {
+                height: 100px;
+            }
+        }
+    }
 }
 
 .modal_content {
