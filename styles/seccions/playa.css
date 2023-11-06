@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@200;300;400;600;800&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clip: circle(0% at 100% 0);
+    --show: circle(141.2% at 100% 0);
+    --text-color-primary: #f1faee;
+    --boton-modal: #003049;
+    --light--blue: #a8dadc;
+    --hover-buton-modal: #eae2b7;
+    --card-text-color: #d62828;
+    --font-primary: "Poppins", sans-serif;
+    --font-titles: "Merriweather", serif;
+}
+body {
+    font-family: var(--font-primary);
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #ff006e 0%, #8338ec 100%);
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../../assets/img/playa/playa-banner.webp");
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax__text {
+    z-index: 10;
+    color: white;
+    font-size: clamp(5rem, -2.8125rem + 25vw, 11.25rem);
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sites {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 40px 0;
+
+    & p {
+        width: 100%;
+        @media screen and (width <= 768px) {
+            width: 80%;
+        }
+    }
+
+    @media screen and (width <= 600px) {
+        flex-direction: column;
+
+        & .sites_img_container {
+            width: 80%;
+
+            & .site_img_1 {
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            & .card__1 {
+                top: 60%;
+                height: 180px;
+
+                width: 150px;
+            }
+
+            & .card__2 {
+                top: 60%;
+                height: 180px;
+
+                width: 150px;
+            }
+            & .card_text {
+                top: 75%;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+section.sites:nth-of-type(2) {
+    @media screen and (width <= 600px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.sites_img_container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.sites_img_container h2 {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.site_img_1 {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../assets/img/playa/bahia-de-cata-42051.jpg");
+    width: 100%;
+    height: 90%;
+}
+.site_img_2 {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../assets/img/playa/20200414-1586839074-tour_panoramico_a_islas_del_rosario_y_playa_blanca_tu_experiencia_3.jpg");
+    width: 100%;
+    height: 90%;
+}
+
+.sites_text {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    width: 400px;
+    height: 60%;
+}
+
+.sites_text h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.sites_text p {
+    border-radius: 10px;
+    background-color: var(--card-text-color);
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: 2px 1px 10px rgba(255, 0, 200, 0.329);
+    color: var(--text-color-primary);
+}
+
+.card__1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 240px;
+    box-shadow: 1px 1px 5px rgba(159, 196, 226, 0.466);
+}
+.card__2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 240px;
+    box-shadow: 1px 1px 5px rgba(159, 196, 226, 0.466);
+}
+
+.card_text {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 20;
+    font-family: var(--font-titles);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.modal_content .modal__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    width: 50%;
+}
+
+.modal_content .modal__img p {
+    width: 80%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.modal__button {
+    background-color: var(--boton-modal);
+}
+
+.modal__checkbox:checked + .sumapaz {
+    clip-path: var(--show);
+    opacity: 1;
+}
+
+.modal__checkbox_sumapaz {
+    display: none;
+}
+
+.modal__checkbox_sumapaz:checked + .modal {
+    clip-path: var(--show);
+    opacity: 1;
+}
+
+.modal__button:hover {
+    color: black;
+    background-color: var(--hover-buton-modal);
+}
