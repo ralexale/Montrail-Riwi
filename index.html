@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./styles/components/navbar.css">
+	<link rel="stylesheet" href="./styles/main.css">
+	<title>BioMontrails</title>
+</head>
+
+<body>
+	<header>
+		<!-- barra de navegacion -->
+		<nav class="navbar_container">
+
+			<div class="mobile__elements">
+
+				<div class="burger__menu">
+
+					<input id="menu-toggle" type="checkbox" />
+
+					<label class='menu-button-container' for="menu-toggle">
+						<span class="material-symbols-outlined">
+							menu
+						</span>
+					</label>
+
+
+					<ul class="menu">
+						<label class='menu-button-container' for="menu-toggle">
+							<span class="material-symbols-outlined">
+								cancel
+							</span>
+						</label>
+
+						<a href="./es/seccions/ciudad.html" style="--a: 0">Ciudad</a>
+						<a href="./es/seccions/bosques.html" style="--a: 1">Bosque</a>
+						<a href="./es/seccions/tundra.html" style="--a: 2">Tundra</a>
+						<a href="./es/seccions/desierto.html" style="--a: 3">Desierto</a>
+						<a href="./es/seccions/playa.html" style="--a: 4">Playa</a>
+
+					</ul>
+				</div>
+
+				<div class="logo">
+					<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
+				</div>
+
+
+				<a class="login__button" href="/">
+					<span class="material-symbols-outlined">
+						account_circle
+					</span>
+				</a>
+
+
+
+			</div>
+
+			<!-- navbar desktop -->
+			<div class="desktop__elements">
+
+				<div class="logo">
+					<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1> </a>
+				</div>
+
+
+				<div class="dropdown__menu">
+
+					<div class="dropdown__title">
+						<span> Biomas <span class="material-symbols-outlined">
+							expand_more
+					</div>
+
+					
+					
+
+					<ul class="dropdown__links">
+						<a href="./es/seccions/ciudad.html"  	style="--a: 1"	class="bioma__link">Ciudad</a>
+						<a href="./es/seccions/bosques.html" 	style="--a: 2"	class="bioma__link">Bosque</a>
+						<a href="./es/seccions/tundra.html" 	style="--a: 3"	class="bioma__link">Tundra</a>
+						<a href="./es/seccions/desierto.html"	style="--a: 4"	class="bioma__link">Desierto</a>
+						<a href="./es/seccions/playa.html"		style="--a: 5"	class="bioma__link">Playa</a>
+					</ul>
+				</div>
+
+				<ul class="navbar__links">
+					<a href="/">Restaurantes</a>
+					<a href="/">Hoteles</a>
+				</ul>
+
+				<!-- input de buscardor -->
+				<div class="navbar__search">
+					<input type="text" placeholder="biomas,restaurantes...">
+					<a class="material-symbols-outlined">
+						search
+					</a>
+				</div>
+
+				<!-- boton de login -->
+				<div class="login__container">
+					<span class="material-symbols-outlined">
+						account_circle
+					</span>
+					<a href="/">Iniciar Sesión</a>
+				</div>
+
+			</div>
+			
+
+		</nav>
+
+	</header>
+
+	<main>
+		<!-- seccion del hero  -->
+		<section class="hero">
+
+			<article class="hero__title">
+				<h1>
+					Descubre la magia de Colombia y Venezuela
+				</h1>
+			</article>
+
+			<!-- galeria de imagenes  -->
+			<article class="hero__galery">
+				<img src="./assets/img/hero/bosque.jpg" alt="bosque" class="galery__item">
+				<img src="./assets/img/hero/ciudad.webp" alt="ciudad" class="galery__item">
+				<img src="./assets/img/hero/playa.webp" alt="playa" class="galery__item">
+				<img src="./assets/img/hero/desierto.jpg" alt="desierto" class="galery__item">
+				<img src="./assets/img/hero/tundra.webp" alt="tundra" class="galery__item">
+			</article>
+
+
+			<!-- circulos -->
+			<div class="hero__circles">
+				<svg xmlns="http://www.w3.org/2000/svg" width="171" height="171" viewBox="0 0 171 171" fill="none">
+					<circle cx="85.5" cy="85.5" r="85.5" fill="#1B9DD5" />
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="171" height="171" viewBox="0 0 171 171" fill="none">
+					<circle cx="85.5" cy="85.5" r="85.5" fill="#1B9DD5" />
+				</svg>
+			</div>
+
+
+
+			<div class="hero__arrows">
+				<!-- arriba izquierda -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+					<line x1="2" y1="8.74228e-08" x2="2" y2="34" stroke="#485171" stroke-width="4" />
+					<line x1="34" y1="2" x2="-1.74846e-07" y2="2" stroke="#485171" stroke-width="4" />
+				</svg>
+
+				<!-- abajo izquierda -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+					<line y1="32" x2="34" y2="32" stroke="#485171" stroke-width="4" />
+					<line x1="2" y1="8.74228e-08" x2="2" y2="34" stroke="#485171" stroke-width="4" />
+				</svg>
+
+				<!-- arriba derecha -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+					<line x1="34" y1="2" x2="1.74846e-07" y2="2" stroke="#485171" stroke-width="4" />
+					<line x1="32" y1="34" x2="32" y2="8.74228e-08" stroke="#485171" stroke-width="4" />
+				</svg>
+
+
+				<!-- abajo izquierda  -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+					<line x1="32" y1="34" x2="32" y2="8.74228e-08" stroke="#485171" stroke-width="4" />
+					<line y1="32" x2="34" y2="32" stroke="#485171" stroke-width="4" />
+				</svg>
+			</div>
+
+		</section>
+
+		<!-- seccion de lugares y planes en el carousel -->
+		<section class="sites">
+
+			<article class="sites__title">
+				<h2>Lugares emocionantes por visitar</h2>
+			</article>
+
+
+			<div class="sites__carousell--mobile">
+
+
+				<div class="arrow_left">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+						<path d="M14.82 21.18L5.66 12L14.82 2.82L12 0L0 12L12 24L14.82 21.18Z" fill="#1B9DD4" />
+					</svg>
+				</div>
+
+
+
+
+				<div class="card guatape">
+					<div class="card__mask"></div>
+
+					<div class="card__content">
+
+						<img src="./assets/card-svgs/Colombia (CO).svg" alt="bandera de colombias">
+
+						<!-- corazon  -->
+						<div class="heart__card">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M7 3C4.239 3 2 5.216 2 7.95C2 10.157 2.875 15.395 11.488 20.69C11.6423 20.7839 11.8194 20.8335 12 20.8335C12.1806 20.8335 12.3577 20.7839 12.512 20.69C21.125 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3C14.239 3 12 6 12 6C12 6 9.761 3 7 3Z"
+									stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="rating">
+							4.5
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+								fill="none">
+								<path
+									d="M17.7363 6.55172L12.7773 5.86705L10.5606 1.59761C10.5 1.48072 10.4004 1.38609 10.2773 1.32857C9.96876 1.18384 9.59375 1.30445 9.43946 1.59761L7.22266 5.86705L2.26368 6.55172C2.12696 6.57027 2.00196 6.6315 1.90626 6.72428C1.79056 6.83725 1.7268 6.98924 1.729 7.14684C1.7312 7.30445 1.79917 7.45478 1.91797 7.5648L5.50587 10.8879L4.65821 15.5804C4.63833 15.6896 4.65105 15.8019 4.69491 15.9045C4.73878 16.0071 4.81204 16.096 4.90639 16.1611C5.00074 16.2262 5.1124 16.2649 5.22872 16.2728C5.34503 16.2807 5.46134 16.2574 5.56446 16.2057L10 13.9903L14.4356 16.2057C14.5566 16.267 14.6973 16.2874 14.832 16.2651C15.1719 16.2094 15.4004 15.9033 15.3418 15.5804L14.4941 10.8879L18.082 7.5648C18.1797 7.47389 18.2441 7.35514 18.2637 7.22525C18.3164 6.90055 18.0781 6.59996 17.7363 6.55172Z"
+									fill="#F8F8F8" />
+							</svg>
+						</div>
+
+						<h3>Guatapé</h3>
+					</div>
+
+				</div>
+
+
+				<div class="arrow_right">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+						<path d="M0 21.18L9.16 12L0 2.82L2.82 0L14.82 12L2.82 24L0 21.18Z" fill="#1B9DD4" />
+					</svg>
+				</div>
+
+			</div>
+
+			<div class="sites__carousell--desktop">
+
+
+				<div class="arrow_left">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+						<path d="M14.82 21.18L5.66 12L14.82 2.82L12 0L0 12L12 24L14.82 21.18Z" fill="#1B9DD4" />
+					</svg>
+				</div>
+
+
+
+
+				<div class="card guatape">
+					<div class="card__mask"></div>
+
+					<div class="card__content">
+
+						<img src="./assets/card-svgs/Colombia (CO).svg" alt="bandera de colombias">
+
+						<!-- corazon  -->
+						<div class="heart__card">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M7 3C4.239 3 2 5.216 2 7.95C2 10.157 2.875 15.395 11.488 20.69C11.6423 20.7839 11.8194 20.8335 12 20.8335C12.1806 20.8335 12.3577 20.7839 12.512 20.69C21.125 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3C14.239 3 12 6 12 6C12 6 9.761 3 7 3Z"
+									stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="rating">
+							4.5
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+								fill="none">
+								<path
+									d="M17.7363 6.55172L12.7773 5.86705L10.5606 1.59761C10.5 1.48072 10.4004 1.38609 10.2773 1.32857C9.96876 1.18384 9.59375 1.30445 9.43946 1.59761L7.22266 5.86705L2.26368 6.55172C2.12696 6.57027 2.00196 6.6315 1.90626 6.72428C1.79056 6.83725 1.7268 6.98924 1.729 7.14684C1.7312 7.30445 1.79917 7.45478 1.91797 7.5648L5.50587 10.8879L4.65821 15.5804C4.63833 15.6896 4.65105 15.8019 4.69491 15.9045C4.73878 16.0071 4.81204 16.096 4.90639 16.1611C5.00074 16.2262 5.1124 16.2649 5.22872 16.2728C5.34503 16.2807 5.46134 16.2574 5.56446 16.2057L10 13.9903L14.4356 16.2057C14.5566 16.267 14.6973 16.2874 14.832 16.2651C15.1719 16.2094 15.4004 15.9033 15.3418 15.5804L14.4941 10.8879L18.082 7.5648C18.1797 7.47389 18.2441 7.35514 18.2637 7.22525C18.3164 6.90055 18.0781 6.59996 17.7363 6.55172Z"
+									fill="#F8F8F8" />
+							</svg>
+						</div>
+
+						<h3>Guatapé</h3>
+					</div>
+
+				</div>
+
+
+
+				<div class="card colonia-tovar">
+					<div class="card__mask"></div>
+
+					<div class="card__content">
+
+						<img src="./assets/card-svgs/Venezuela (VE).svg" alt="bandera de colombias">
+
+						<!-- corazon  -->
+						<div class="heart__card">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M7 3C4.239 3 2 5.216 2 7.95C2 10.157 2.875 15.395 11.488 20.69C11.6423 20.7839 11.8194 20.8335 12 20.8335C12.1806 20.8335 12.3577 20.7839 12.512 20.69C21.125 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3C14.239 3 12 6 12 6C12 6 9.761 3 7 3Z"
+									stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="rating">
+							4.5
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+								fill="none">
+								<path
+									d="M17.7363 6.55172L12.7773 5.86705L10.5606 1.59761C10.5 1.48072 10.4004 1.38609 10.2773 1.32857C9.96876 1.18384 9.59375 1.30445 9.43946 1.59761L7.22266 5.86705L2.26368 6.55172C2.12696 6.57027 2.00196 6.6315 1.90626 6.72428C1.79056 6.83725 1.7268 6.98924 1.729 7.14684C1.7312 7.30445 1.79917 7.45478 1.91797 7.5648L5.50587 10.8879L4.65821 15.5804C4.63833 15.6896 4.65105 15.8019 4.69491 15.9045C4.73878 16.0071 4.81204 16.096 4.90639 16.1611C5.00074 16.2262 5.1124 16.2649 5.22872 16.2728C5.34503 16.2807 5.46134 16.2574 5.56446 16.2057L10 13.9903L14.4356 16.2057C14.5566 16.267 14.6973 16.2874 14.832 16.2651C15.1719 16.2094 15.4004 15.9033 15.3418 15.5804L14.4941 10.8879L18.082 7.5648C18.1797 7.47389 18.2441 7.35514 18.2637 7.22525C18.3164 6.90055 18.0781 6.59996 17.7363 6.55172Z"
+									fill="#F8F8F8" />
+							</svg>
+						</div>
+
+						<h3>Colonia Tovar</h3>
+					</div>
+
+				</div>
+
+
+
+				<div class="card santuario-palma">
+					<div class="card__mask"></div>
+
+					<div class="card__content">
+
+						<img src="./assets/card-svgs/Colombia (CO).svg" alt="bandera de colombias">
+
+						<!-- corazon  -->
+						<div class="heart__card">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M7 3C4.239 3 2 5.216 2 7.95C2 10.157 2.875 15.395 11.488 20.69C11.6423 20.7839 11.8194 20.8335 12 20.8335C12.1806 20.8335 12.3577 20.7839 12.512 20.69C21.125 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3C14.239 3 12 6 12 6C12 6 9.761 3 7 3Z"
+									stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="rating">
+							4.5
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+								fill="none">
+								<path
+									d="M17.7363 6.55172L12.7773 5.86705L10.5606 1.59761C10.5 1.48072 10.4004 1.38609 10.2773 1.32857C9.96876 1.18384 9.59375 1.30445 9.43946 1.59761L7.22266 5.86705L2.26368 6.55172C2.12696 6.57027 2.00196 6.6315 1.90626 6.72428C1.79056 6.83725 1.7268 6.98924 1.729 7.14684C1.7312 7.30445 1.79917 7.45478 1.91797 7.5648L5.50587 10.8879L4.65821 15.5804C4.63833 15.6896 4.65105 15.8019 4.69491 15.9045C4.73878 16.0071 4.81204 16.096 4.90639 16.1611C5.00074 16.2262 5.1124 16.2649 5.22872 16.2728C5.34503 16.2807 5.46134 16.2574 5.56446 16.2057L10 13.9903L14.4356 16.2057C14.5566 16.267 14.6973 16.2874 14.832 16.2651C15.1719 16.2094 15.4004 15.9033 15.3418 15.5804L14.4941 10.8879L18.082 7.5648C18.1797 7.47389 18.2441 7.35514 18.2637 7.22525C18.3164 6.90055 18.0781 6.59996 17.7363 6.55172Z"
+									fill="#F8F8F8" />
+							</svg>
+						</div>
+
+						<h3>Santuario de Palma</h3>
+					</div>
+
+				</div>
+
+				<div class="arrow_right">
+					<svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+						<path d="M0 21.18L9.16 12L0 2.82L2.82 0L14.82 12L2.82 24L0 21.18Z" fill="#1B9DD4" />
+					</svg>
+				</div>
+
+			</div>
+
+
+		</section>
+
+		<!-- seccion de biomas -->
+		<section class="biomas__container">
+			<article class="biomas__title">
+				<h2>Maravillosos biomas por conocer</h2>
+			</article>
+
+
+			<div class="biomas__cards">
+
+
+				<a href="/es/seccions/ciudad.html" class="bioma__card ciudad">
+					<div class="card__mask"></div>
+					<span>Ciudad</span>
+				</a>
+
+				<a href="/es/seccions/bosques.html" class="bioma__card bosque">
+					<div class="card__mask"></div>
+					<span>Bosque</span>
+				</a>
+
+				<a href="/es/seccions/tundra.html" class="bioma__card tundra">
+					<div class="card__mask"></div>
+					<span>Tundra</span>
+				</a>
+
+				<a href="/es/seccions/playa.html" class="bioma__card playa">
+					<div class="card__mask"></div>
+					<span>Playa</span>
+				</a>
+
+				<a href="/es/seccions/desierto.html" class="bioma__card desierto">
+					<div class="card__mask"></div>
+					<span>Desierto</span>
+				</a>
+
+			</div>
+
+
+			<img src="./assets/biomas-shape/waves.png" alt="shape">
+		</section>
+	</main>
+
+	<!-- footer de la pagina  -->
+	<footer>
+
+
+		<svg class="footer__wave" width="1440" height="209" viewBox="0 0 1440 209" fill="none">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M0 -128H1440V67C1440 67 1079.43 209 719.621 209C359.81 209 0 67 0 67V-128Z" fill="#7FBC84" />
+		</svg>
+
+		<form action="" class="newsletter__forms">
+
+			<h3>
+				Suscribete a nuestro Newsletters!
+			</h3>
+
+			<article class="input__container">
+
+				<input type="email" placeholder="Coloca tu correo">
+
+				<button type="submit">Suscribirse</button>
+			</article>
+
+		</form>
+
+
+		<article class="footer__links">
+
+			<ul class="biomas__links">
+				<a href="">Ciudad</a>
+				<a href="">Bosques</a>
+				<a href="">Tundra</a>
+				<a href="">Playa</a>
+				<a href="">Desierto</a>
+			</ul>
+
+			<ul class="social__links">
+				<i class='bx bxl-instagram-alt'></i>
+				<i class='bx bxl-facebook-square'></i>
+				<i class='bx bxl-tiktok'></i>
+			</ul>
+
+		</article>
+
+
+		<article class="footer__terms">
+
+			<span class="terms_span">© 2023 BioMontrails. Todos los derechos Reservados.</span>
+
+			<div class="logo">
+				<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
+			</div>
+
+			<div class="terms_links">
+				<a href="/">Términos del servicio</a>
+				<a href="/">Política de Privacidad</a>
+			</div>
+
+		</article>
+
+
+	</footer>
+</body>
+
+</html>

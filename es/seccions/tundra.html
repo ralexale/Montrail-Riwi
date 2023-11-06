@@ -1,200 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tundra</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
-    />
-    <link rel="stylesheet" href="../../styles/navbar.css" />
-    <link rel="stylesheet" href="../../styles/modal.css" />
-    <link rel="stylesheet" href="../../styles/tundra.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <header>
-      <section class="parallax_wrapper">
-        <nav class="header__nav">
-          <ul class="nav__links">
-            <a href="./playa.html" class="side__links">
-              <span class="material-symbols-outlined"> arrow_back_ios </span>
-              Playa
-            </a>
-            <a href="../../index2.html" class="links__biomontrails">
-              Bi<span class="material-symbols-outlined"> light_mode </span
-              >Montrails
-            </a>
-            <a href="./bosques.html" class="side__links">
-              Bosque
-              <span class="material-symbols-outlined"> arrow_forward_ios </span>
-            </a>
-          </ul>
-        </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BioMontrails | Tundra</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+        />
 
-        <div class="parallax__text">Tundra</div>
-      </section>
-    </header>
-
-    <!-- contenedor de sitios -->
-    <main>
-      <section class="sites">
-        <figure class="sites_img_container">
-          <div class="sites_card">
-            <span class="card_text">Explora!</span>
-            <svg
-              class="card_culata"
-              width="200"
-              height="300"
-              viewBox="0 0 154 184"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-                fill="#A8DADC"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-                fill="#A8DADC"
-              ></path>
-            </svg>
-          </div>
-
-          <div class="culata_img"></div>
-        </figure>
-
-        <div class="sites_text">
-          <h2>
-            Paramo la Culata <br />
-            Venezuela
-          </h2>
-          <p>Sumérgete en las alturas del Páramo de la Culata en Venezuela!.</p>
-
-          <!-- boton para abrir el modal -->
-          <input type="checkbox" class="modal__checkbox" id="modalToggle" />
-          <!-- contenedor del modal  de paramo-->
-          <section class="modal">
-            <!-- google maps  -->
-
-            <article class="modal_content">
-              <div class="modal__img">
-                <img
-                  src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
-                  alt="parque paramo la culata"
-                />
-                <p>
-                  Explora paisajes de ensueño, lagunas cristalinas y una
-                  biodiversidad única en uno de los destinos más mágicos de la
-                  tundra andina.
-                </p>
+        <link rel="stylesheet" href="../../styles/components/navbar.css" />
+        <link rel="stylesheet" href="../../styles/components/modal.css" />
+        <link rel="stylesheet" href="../../styles/seccions/tundra.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <header>
+          <!-- barra de navegacion -->
+          <nav class="navbar_container">
+  
+              <div class="mobile__elements">
+  
+                  <div class="burger__menu">
+  
+                      <input id="menu-toggle" type="checkbox" />
+  
+                      <label class='menu-button-container' for="menu-toggle">
+                          <span class="material-symbols-outlined">
+                              menu
+                          </span>
+                      </label>
+  
+  
+                      <ul class="menu">
+                          <label class='menu-button-container' for="menu-toggle">
+                              <span class="material-symbols-outlined">
+                                  cancel
+                              </span>
+                          </label>
+  
+                          <a href="./es/seccions/ciudad.html" style="--a: 0">Ciudad</a>
+                          <a href="./es/seccions/bosques.html" style="--a: 1">Bosque</a>
+                          <a href="./es/seccions/tundra.html" style="--a: 2">Tundra</a>
+                          <a href="./es/seccions/desierto.html" style="--a: 3">Desierto</a>
+                          <a href="./es/seccions/playa.html" style="--a: 4">Playa</a>
+  
+                      </ul>
+                  </div>
+  
+                  <div class="logo">
+                      <a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
+                  </div>
+  
+  
+                  <a class="login__button" href="/">
+                      <span class="material-symbols-outlined">
+                          account_circle
+                      </span>
+                  </a>
+  
+  
+  
               </div>
-              <!-- google maps -->
-              <iframe
-                src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-                width="50%"
-                height="100%"
-                style="border: 0"
-                loading="lazy"
-              >
-              </iframe>
-              <label for="modalToggle" class="modal__close"
-                ><span class="material-symbols-outlined"> close </span></label
-              >
-            </article>
-
-            <!-- Boton de cerrar  -->
-          </section>
-          <label class="modal__button" for="modalToggle">Rutas y Planes</label>
-        </div>
-      </section>
-
-      <section class="sites">
-        <div class="sites_text">
-          <h2>
-            Páramo de Sumapaz <br />
-            Colombia
-          </h2>
-          <p>
-            Descubre el pulso del Páramo de Sumapaz en Colombia, el páramo más
-            grande del mundo. Un refugio de vida silvestre y senderos que te
-            llevarán a un viaje a través de las nubes.
-          </p>
-
-          <!-- boton para abrir el modal -->
-          <input
-            type="checkbox"
-            class="modal__checkbox"
-            id="modalToggle_sumapaz"
-          />
-          <!-- contenedor del modal  de paramo-->
-          <section class="modal sumapaz">
-            <!-- google maps  -->
-
-            <article class="modal_content">
-              <div class="modal__img">
-                <img
-                  src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
-                  alt="parque paramo la culata"
-                />
-                <p>
-                  Explora paisajes de ensueño, lagunas cristalinas y una
-                  biodiversidad única en uno de los destinos más mágicos de la
-                  tundra andina.
-                </p>
+  
+              <div class="desktop__elements">
+  
+                  <div class="logo">
+                      <a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1> </a>
+                  </div>
+  
+  
+                  <div class="dropdown__menu">
+  
+                      <div class="dropdown__title">
+                          <span> Biomas <span class="material-symbols-outlined">
+                              expand_more
+                      </div>
+  
+                      
+                      
+  
+                      <ul class="dropdown__links">
+                          <a href="./ciudad.html" 	class="bioma__link">Ciudad</a>
+                          <a href="./bosques.html" 	class="bioma__link">Bosque</a>
+                          <a href="./tundra.html" 	class="bioma__link">Tundra</a>
+                          <a href="./desierto.html"	class="bioma__link">Desierto</a>
+                          <a href="./playa.html"	class="bioma__link">Playa</a>
+                      </ul>
+                  </div>
+  
+                  <ul class="navbar__links">
+                      <a href="/">Restaurantes</a>
+                      <a href="/">Hoteles</a>
+                  </ul>
+  
+                  <!-- input de buscardor -->
+                  <div class="navbar__search">
+                      <input type="text" placeholder="biomas,restaurantes...">
+                      <a class="material-symbols-outlined">
+                          search
+                      </a>
+                  </div>
+  
+                  <!-- boton de login -->
+                  <div class="login__container">
+                      <span class="material-symbols-outlined">
+                          account_circle
+                      </span>
+                      <a href="/">Iniciar Sesión</a>
+                  </div>
+  
               </div>
-              <!-- google maps -->
-              <iframe
-                src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
-                width="50%"
-                height="100%"
-                style="border: 0"
-                loading="lazy"
-              >
-              </iframe>
-              <label for="modalToggle" class="modal__close"
-                ><span class="material-symbols-outlined"> close </span></label
-              >
-            </article>
+              <!-- logo principal -->
+  
+          </nav>
+  
+      </header>
+        <!-- contenedor de sitios -->
+        <main>
+            <section class="hero">
+                <div class="parallax__text">Tundra</div>
+            </section>
 
-            <!-- Boton de cerrar  -->
-          </section>
-          <label class="modal__button" for="modalToggle">Rutas y Planes</label>
-        </div>
-        <figure class="sites_img_container">
-          <div>
-            <span class="card_text">Diviertete!</span>
-            <svg
-              class="card_sumapaz"
-              width="200"
-              height="300"
-              viewBox="0 0 154 184"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
-                fill="#A8DADC"
-              ></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
-                fill="#A8DADC"
-              ></path>
-            </svg>
-          </div>
+            <section class="sites">
+                <figure class="sites_img_container">
+                    <div class="sites_card">
+                        <span class="card_text">Explora!</span>
+                        <svg
+                            class="card_culata"
+                            width="200"
+                            height="300"
+                            viewBox="0 0 154 184"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
+                                fill="#A8DADC"
+                            ></path>
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
+                                fill="#A8DADC"
+                            ></path>
+                        </svg>
+                    </div>
 
-          <div class="sumadepaz_img"></div>
-        </figure>
-      </section>
-    </main>
-  </body>
+                    <div class="culata_img"></div>
+                </figure>
+
+                <div class="sites_text">
+                    <h2>
+                        Paramo la Culata <br />
+                        Venezuela
+                    </h2>
+                    <p>
+                        Sumérgete en las alturas del Páramo de la Culata en
+                        Venezuela!.
+                    </p>
+
+                    <!-- boton para abrir el modal -->
+                    <input
+                        type="checkbox"
+                        class="modal__checkbox"
+                        id="modalToggle"
+                    />
+                    <!-- contenedor del modal  de paramo-->
+                    <section class="modal">
+                        <!-- google maps  -->
+
+                        <article class="modal_content">
+                            <div class="modal__img">
+                                <img
+                                    src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
+                                    alt="parque paramo la culata"
+                                />
+                                <p>
+                                    Explora paisajes de ensueño, lagunas
+                                    cristalinas y una biodiversidad única en uno
+                                    de los destinos más mágicos de la tundra
+                                    andina.
+                                </p>
+                            </div>
+                            <!-- google maps -->
+                            <iframe
+                                src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
+                                width="50%"
+                                height="100%"
+                                style="border: 0"
+                                loading="lazy"
+                            >
+                            </iframe>
+                            <label for="modalToggle" class="modal__close"
+                                ><span class="material-symbols-outlined">
+                                    close
+                                </span></label
+                            >
+                        </article>
+
+                        <!-- Boton de cerrar  -->
+                    </section>
+                    <label class="modal__button" for="modalToggle"
+                        >Rutas y Planes</label
+                    >
+                </div>
+            </section>
+
+           
+
+            <section class="sites">
+                <div class="sites_text">
+                    <h2>
+                        Páramo de Sumapaz <br />
+                        Colombia
+                    </h2>
+                    <p>
+                        Descubre el pulso del Páramo de Sumapaz en Colombia, el
+                        páramo más grande del mundo. 
+                    </p>
+
+                    <!-- boton para abrir el modal -->
+                    <input
+                        type="checkbox"
+                        class="modal__checkbox"
+                        id="modalToggle_sumapaz"
+                    />
+                    <!-- contenedor del modal  de paramo-->
+                    <section class="modal sumapaz">
+                        <!-- google maps  -->
+
+                        <article class="modal_content">
+                            <div class="modal__img">
+                                <img
+                                    src="../../assets/img/tundra/modal paramo/parque_nacional_sierra_de_la_culata.jpg"
+                                    alt="parque paramo la culata"
+                                />
+                                <p>
+                                  Un refugio de vida
+                        silvestre y senderos que te llevarán a un viaje a través
+                        de las nubes.
+                                </p>
+                            </div>
+                            <!-- google maps -->
+                            <iframe
+                                src="https://storage.googleapis.com/maps-solutions-61wxdnt2l3/neighborhood-discovery/ngcz/neighborhood-discovery.html"
+                                width="50%"
+                                height="100%"
+                                style="border: 0"
+                                loading="lazy"
+                            >
+                            </iframe>
+                            <label for="modalToggle" class="modal__close"
+                                ><span class="material-symbols-outlined">
+                                    close
+                                </span></label
+                            >
+                        </article>
+
+                        <!-- Boton de cerrar  -->
+                    </section>
+                    <label class="modal__button" for="modalToggle"
+                        >Rutas y Planes</label
+                    >
+                </div>
+                <figure class="sites_img_container">
+                    <div>
+                        <span class="card_text">Diviertete!</span>
+                        <svg
+                            class="card_sumapaz"
+                            width="200"
+                            height="300"
+                            viewBox="0 0 154 184"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
+                                fill="#A8DADC"
+                            ></path>
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M82.0049 130.973C79.2403 130.973 76.9992 128.734 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 125.972 76.9992 125.972 76.9992 125.972C76.9992 128.731 74.7629 130.968 72.0024 130.973C74.7625 130.978 76.9986 133.214 76.9992 135.972C76.9998 133.211 79.2407 130.973 82.0049 130.973Z"
+                                fill="#A8DADC"
+                            ></path>
+                        </svg>
+                    </div>
+
+                    <div class="sumadepaz_img"></div>
+                </figure>
+            </section>
+        </main>
+    </body>
 </html>
