@@ -180,7 +180,7 @@ section.sites:nth-of-type(2) {
 
 .card_text {
     position: absolute;
-    top: 57%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 20;
