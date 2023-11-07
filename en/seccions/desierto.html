@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BioMontrails | Desierto</title>
+    <title>BioMontrails | Desert</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../../styles/components/navbar.css" />
     <link rel="stylesheet" href="../../styles/components/modal.css" />
-    <link rel="stylesheet" href="../../styles/seccions/playa.css" />
+    <link rel="stylesheet" href="../../styles/seccions/desierto.css" />
 </head>
 
 <body>
@@ -40,22 +40,20 @@
 							</span>
 						</label>
 
-						<a href="./ciudad.html" style="--a: 0">Ciudad</a>
-						<a href="./bosques.html" style="--a: 1">Bosque</a>
+						<a href="./ciudad.html" style="--a: 0">City</a>
+						<a href="./bosques.html" style="--a: 1">Forest</a>
 						<a href="./tundra.html" style="--a: 2">Tundra</a>
-						<a href="./desierto.html" style="--a: 3">Desierto</a>
-						<a href="./playa.html" style="--a: 4">Playa</a>
-
+						<a href="./desierto.html" style="--a: 3">Desert</a>
+						<a href="./playa.html" style="--a: 4">Beach</a>
                         <div class="translate">
                             <span class="material-symbols-outlined">
                                 language
                                 </span>
                             <select onchange="window.location.href = this.value">
-                                <option value="/">Es</option>
-                                <option value="../../en/seccions/playa.html">En</option>
+                                <option value="/">En</option>
+                                <option value="../../es/seccions/desierto.html">Es</option>
                               </select>
                         </div>
-
 					</ul>
 				</div>
 
@@ -85,7 +83,7 @@
 				<div class="dropdown__menu">
 
 					<div class="dropdown__title">
-						<span> Biomas <span class="material-symbols-outlined">
+						<span> Biomes <span class="material-symbols-outlined">
 							expand_more
 					</div>
 
@@ -93,22 +91,22 @@
 					
 
 					<ul class="dropdown__links">
-						<a href="./ciudad.html"  	style="--a: 1"	class="bioma__link">Ciudad</a>
-						<a href="./bosques.html" 	style="--a: 2"	class="bioma__link">Bosque</a>
+						<a href="./ciudad.html"  	style="--a: 1"	class="bioma__link">City</a>
+						<a href="./bosques.html" 	style="--a: 2"	class="bioma__link">Forest</a>
 						<a href="./tundra.html" 	style="--a: 3"	class="bioma__link">Tundra</a>
-						<a href="./desierto.html"	style="--a: 4"	class="bioma__link">Desierto</a>
-						<a href="./playa.html"		style="--a: 5"	class="bioma__link">Playa</a>
+						<a href="./desierto.html"	style="--a: 4"	class="bioma__link">Desert</a>
+						<a href="./playa.html"		style="--a: 5"	class="bioma__link">Beach</a>
 					</ul>
 				</div>
 
 				<ul class="navbar__links">
-					<a href="/">Restaurantes</a>
-					<a href="/">Hoteles</a>
+					<a href="/">Restaurants</a>
+					<a href="/">Hotels</a>
 				</ul>
 
 				<!-- input de buscardor -->
 				<form class="navbar__search">
-					<input type="text" placeholder="biomas,restaurantes...">
+					<input type="text" placeholder="biomes,restaurants...">
 					<button class="material-symbols-outlined">search</button>
 				</form>
 
@@ -117,18 +115,17 @@
 					<span class="material-symbols-outlined">
 						account_circle
 					</span>
-					<a href="/">Iniciar Sesión</a>
+					<a href="/">Login</a>
 				</div>
 
-				<!-- cambiar idioma -->
-
-				<div class="translate">
+                <!-- translate -->
+                <div class="translate">
                     <span class="material-symbols-outlined">
                         language
                         </span>
                     <select onchange="window.location.href = this.value">
-                        <option value="/">Es</option>
-                        <option value="../../en/seccions/playa.html">En</option>
+                        <option value="/">En</option>
+                        <option value="../../es/seccions/desierto.html">Es</option>
                       </select>
                 </div>
 
@@ -141,13 +138,13 @@
     <!-- contenedor de sitios -->
     <main>
         <section class="hero">
-            <div class="parallax__text">Playa</div>
+            <div class="parallax__text">Desert</div>
         </section>
 
         <section class="sites">
             <figure class="sites_img_container">
                 <div class="sites_card">
-                    <span class="card_text">Explora!</span>
+                    <span class="card_text">Explore!</span>
                     <svg class="card__1" width="200" height="300" viewBox="0 0 154 184" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"
@@ -163,11 +160,11 @@
 
             <div class="sites_text">
                 <h2>
-                    Bahía de Cata <br />
+                    Medanos de Coro <br />
                     Venezuela
                 </h2>
                 <p>
-                    La Bahía de Cata te ofrece aguas cristalinas, arena dorada y una atmósfera de serenidad que acarician tus sentidos
+                    Located in the state of Falcón, in northwestern Venezuela, the Médanos de Coro are a geological jewel. Its imposing dunes up to 40 meters high will take your breath away.
                 </p>
 
                 <!-- boton para abrir el modal -->
@@ -199,20 +196,18 @@
 
                     <!-- Boton de cerrar  -->
                 </section>
-                <label class="modal__button" for="modalToggle">Rutas y Planes</label>
+                <label class="modal__button" for="modalToggle">Routes and Plans</label>
             </div>
         </section>
 
         <section class="sites">
             <div class="sites_text">
                 <h2>
-                    Playa Blanca <br>(Islas del Rosario) <br />
+                    Desierto de la Tatacoa <br />
                     Colombia
                 </h2>
                 <p>
-                    Arena
-                    blanca como la nieve, aguas turquesas y un ambiente de ensueño te esperan en este rincón del Caribe
-                    colombiano.
+                    The Tatacoa Desert, despite its name, is a place full of life and diversity.
                 </p>
 
                 <!-- boton para abrir el modal -->
@@ -244,11 +239,11 @@
 
                     <!-- Boton de cerrar  -->
                 </section>
-                <label class="modal__button" for="modalToggle">Rutas y Planes</label>
+                <label class="modal__button" for="modalToggle">Routes and Plans</label>
             </div>
             <figure class="sites_img_container">
                 <div>
-                    <span class="card_text">Diviertete!</span>
+                    <span class="card_text">Have fun!</span>
                     <svg class="card__2" width="200" height="300" viewBox="0 0 154 184" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M154 0H0V184H154V0ZM144 10H10V144H144V10Z"

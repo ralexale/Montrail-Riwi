@@ -321,3 +321,10 @@ header {
         transform: translateY(0);
     }
 }
+
+.translate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

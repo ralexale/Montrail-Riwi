@@ -17,106 +17,127 @@
 <body>
     <!-- navbar -->
     <header>
-        <!-- barra de navegacion -->
-        <nav class="navbar_container">
+		<!-- barra de navegacion -->
+		<nav class="navbar_container">
 
-            <div class="mobile__elements">
+			<div class="mobile__elements">
 
-                <div class="burger__menu">
+				<div class="burger__menu">
 
-                    <input id="menu-toggle" type="checkbox" />
+					<input id="menu-toggle" type="checkbox" />
 
-                    <label class='menu-button-container' for="menu-toggle">
-                        <span class="material-symbols-outlined">
-                            menu
-                        </span>
-                    </label>
+					<label class='menu-button-container' for="menu-toggle">
+						<span class="material-symbols-outlined">
+							menu
+						</span>
+					</label>
 
 
-                    <ul class="menu">
-                        <label class='menu-button-container' for="menu-toggle">
+					<ul class="menu">
+						<label class='menu-button-container' for="menu-toggle">
+							<span class="material-symbols-outlined">
+								cancel
+							</span>
+						</label>
+
+						<a href="./ciudad.html" style="--a: 0">Ciudad</a>
+						<a href="./bosques.html" style="--a: 1">Bosque</a>
+						<a href="./tundra.html" style="--a: 2">Tundra</a>
+						<a href="./desierto.html" style="--a: 3">Desierto</a>
+						<a href="./playa.html" style="--a: 4">Playa</a>
+
+                        <div class="translate">
                             <span class="material-symbols-outlined">
-                                cancel
-                            </span>
-                        </label>
+                                language
+                                </span>
+                            <select onchange="window.location.href = this.value">
+                                <option value="/">Es</option>
+                                <option value="../../en/seccions/ciudad.html">En</option>
+                              </select>
+                        </div>
 
-                        <a href="./ciudad.html" style="--a: 0">Ciudad</a>
-                        <a href="./bosques.html" style="--a: 1">Bosque</a>
-                        <a href="./tundra.html" style="--a: 2">Tundra</a>
-                        <a href="./desierto.html" style="--a: 3">Desierto</a>
-                        <a href="./playa.html" style="--a: 4">Playa</a>
+					</ul>
+				</div>
 
-                    </ul>
-                </div>
-
-                <div class="logo">
-                    <a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
-                </div>
+				<div class="logo">
+					<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1>
+				</div>
 
 
-                <a class="login__button" href="/">
+				<a class="login__button" href="/">
+					<span class="material-symbols-outlined">
+						account_circle
+					</span>
+				</a>
+
+
+
+			</div>
+
+			<!-- navbar desktop -->
+			<div class="desktop__elements">
+
+				<div class="logo">
+					<a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1> </a>
+				</div>
+
+
+				<div class="dropdown__menu">
+
+					<div class="dropdown__title">
+						<span> Biomas <span class="material-symbols-outlined">
+							expand_more
+					</div>
+
+					
+					
+
+					<ul class="dropdown__links">
+						<a href="./ciudad.html"  	style="--a: 1"	class="bioma__link">Ciudad</a>
+						<a href="./bosques.html" 	style="--a: 2"	class="bioma__link">Bosque</a>
+						<a href="./tundra.html" 	style="--a: 3"	class="bioma__link">Tundra</a>
+						<a href="./desierto.html"	style="--a: 4"	class="bioma__link">Desierto</a>
+						<a href="./playa.html"		style="--a: 5"	class="bioma__link">Playa</a>
+					</ul>
+				</div>
+
+				<ul class="navbar__links">
+					<a href="/">Restaurantes</a>
+					<a href="/">Hoteles</a>
+				</ul>
+
+				<!-- input de buscardor -->
+				<form class="navbar__search">
+					<input type="text" placeholder="biomas,restaurantes...">
+					<button class="material-symbols-outlined">search</button>
+				</form>
+
+				<!-- boton de login -->
+				<div class="login__container">
+					<span class="material-symbols-outlined">
+						account_circle
+					</span>
+					<a href="/">Iniciar Sesión</a>
+				</div>
+
+				<!-- cambiar idioma -->
+
+				<div class="translate">
                     <span class="material-symbols-outlined">
-                        account_circle
-                    </span>
-                </a>
-
-
-
-            </div>
-
-            <div class="desktop__elements">
-
-                <div class="logo">
-                    <a href="/">Bi<span class="material-symbols-outlined">light_mode</span>montrails</h1> </a>
+                        language
+                        </span>
+                    <select onchange="window.location.href = this.value">
+                        <option value="/">Es</option>
+                        <option value="../../en/seccions/ciudad.html">En</option>
+                      </select>
                 </div>
 
+			</div>
+			
 
-                <div class="dropdown__menu">
+		</nav>
 
-                    <div class="dropdown__title">
-                        <span> Biomas <span class="material-symbols-outlined">
-                                expand_more
-                    </div>
-
-
-
-
-                    <ul class="dropdown__links">
-                        <a href="./ciudad.html" class="bioma__link">Ciudad</a>
-                        <a href="./bosques.html" class="bioma__link">Bosque</a>
-                        <a href="./tundra.html" class="bioma__link">Tundra</a>
-                        <a href="./desierto.html" class="bioma__link">Desierto</a>
-                        <a href="./playa.html" class="bioma__link">Playa</a>
-                    </ul>
-                </div>
-
-                <ul class="navbar__links">
-                    <a href="/">Restaurantes</a>
-                    <a href="/">Hoteles</a>
-                </ul>
-
-                <!-- input de buscardor -->
-                <div class="navbar__search">
-                    <input type="text" placeholder="biomas,restaurantes...">
-                    <a class="material-symbols-outlined">
-                        search
-                    </a>
-                </div>
-
-                <!-- boton de login -->
-                <div class="login__container">
-                    <span class="material-symbols-outlined">
-                        account_circle
-                    </span>
-                    <a href="/">Iniciar Sesión</a>
-                </div>
-
-            </div>
-            <!-- logo principal -->
-
-        </nav>
-
-    </header>
+	</header>
     <!-- contenedor de sitios -->
     <main>
         <section class="hero">
