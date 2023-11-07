@@ -450,7 +450,7 @@ body {
         }
 
         & .tundra {
-            background: url("../assets/img/hero/ciudad.webp");
+            background: url("../assets/img/tundra/1200px-Pico_El_Leon.jpg");
         }
 
         & .tundra:hover {
@@ -458,14 +458,14 @@ body {
         }
 
         & .playa {
-            background-image: url("../assets/img/bosque/bosque_palma_cera.jpg");
+            background-image: url("../assets/img/playa/playa-banner.webp");
         }
         & .playa:hover {
             box-shadow: 0px 4px 27px 28px rgba(255, 0, 110, 0.5);
         }
 
         & .desierto {
-            background-image: url("../assets/img/bosque/bosque_palma_cera.jpg");
+            background-image: url("../assets/img/desierto/medanos.jpg");
         }
 
         & .desierto:hover {
