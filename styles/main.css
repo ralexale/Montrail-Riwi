@@ -191,6 +191,7 @@ body {
 
 /* segunda seccion de la pagina  */
 .sites {
+    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -630,6 +631,7 @@ footer {
     }
 
     & .footer__terms {
+        text-align: center;
         display: flex;
         width: 80%;
         height: 100px;
