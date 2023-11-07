@@ -183,7 +183,7 @@ section.sites:nth-of-type(2) {
 
 .card_text {
     position: absolute;
-    top: 60%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 20;
@@ -232,4 +232,8 @@ a {
 .modal__button:hover {
     color: black;
     background-color: var(--hover-buton-modal);
+}
+
+.modal_content img {
+    width: 60%;
 }
